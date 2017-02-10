@@ -1,5 +1,5 @@
 def sqInRect(square, lng, wdth):
-    if lng == wdth and lng != 1 and lng != 2:
+    if lng == wdth and square == []:
         return square
     else:
         square.append(int(return_smaller(lng, wdth)))

@@ -13,19 +13,29 @@ class TestKatta(TestCase):
         square = []
 
         sqInRect(square, 5, 3)
+
         self.assertEqual(square, [3, 2, 1, 1])
 
     def test_return_same_values_lng_and_wdth_exchanges(self):
         square = []
 
         sqInRect(square, 3, 5)
+
         self.assertEqual(square, [3, 2, 1, 1])
 
     def test_with_other_values(self):
         square = []
 
         sqInRect(square, 6, 4)
+
         self.assertEqual(square, [4, 2, 2])
+
+    def test_for_value_6_3(self):
+        square = []
+
+        sqInRect(square, 6, 3)
+
+        self.assertEqual(square, [3, 3])
 
     def test_return_smaller_when_lng_longueur_than_wdth(self):
         self.assertEquals(return_smaller(4, 2), 2)
